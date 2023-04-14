@@ -1,0 +1,46 @@
+<%- include('layout/header') %>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mx-auto mt-4">
+                <div class="card shadow">
+                    <div class="card-header bf-primary">
+                        <h3 class="text-dark"> Add New User</h3>
+                    </div>
+
+                    <div class="card-body p-4">
+                        <form action="/add" method="post" id="add-form" enctype="multipart/form-data">
+
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Name</label>
+                            <input type="text" name="name" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Phone</label>
+                            <input type="string" name="phone" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Phone Number">
+                        </div>
+                       
+                    <br>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">Select Image</label>
+                            <input type="file" name="image" type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+
+                        <button type="submit" name="submit" value="Add User" class="btn btn-primary">Submit</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('layout/footer') %>
